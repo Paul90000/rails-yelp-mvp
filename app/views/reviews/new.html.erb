@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="d-flex flex-column p-1 align-items-center">
+    <h2>Add a Review for <%= @restaurant.name %></h2>
+
+    <div class="d-flex flex-column p-1 align-items-center">
+      <%= simple_form_for [@restaurant, @review] do |f| %>
+        <%= f.input :rating, as: :integer, label: 'Rating (0-5)' %>
+        <%= f.input :content, label: 'Content' %>
+        <%= f.button :submit %>
+      <% end %>
+
+      <%= link_to "Back to restaurant", restaurant_path(@restaurant), class: "link-btn" %>
+    </div>
+  </div>
+</div>

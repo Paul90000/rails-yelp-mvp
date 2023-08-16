@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="d-flex flex-column p-1 align-items-center">
+    <h1 class="border-bottom">All Restaurants</h1>
+
+    <div class="d-flex flex-column p-1 justify-content-between">
+      <div id="restaurants-wrapper">
+        <% @restaurants.each do |restaurant| %>
+          <h3 class="mt-2 d-flex align-items-center justify-content-between">
+            <%= restaurant.name %>
+            <%= link_to "Details", restaurant_path(restaurant), class: "btn btn-primary p-1"%>
+          </h3>
+        <% end %>
+      </div>
+      <%= link_to 'Add New Restaurant', new_restaurant_path, class: "btn btn-primary p-1" %>
+    </div>
+
+  </div>
+</div>

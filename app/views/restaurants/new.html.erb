@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="d-flex flex-column p-1 align-items-center">
+    <h1>Add a New Restaurant</h1>
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name, label: 'Name' %>
+      <%= f.input :address, label: 'Address' %>
+      <%= f.input :phone_number, label: 'Phone Number' %>
+      <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"], prompt: 'Select a category' %>
+      <%= f.button :submit %>
+    <% end %>
+    <%= link_to "All Restaurants", restaurants_path, class: "link-btn" %>
+  </div>
+</div>

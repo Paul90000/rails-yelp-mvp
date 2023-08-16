@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+h1 {
+  font-size: 48px;
+  padding: 0;
+  margin-bottom: 8px;
+  color: #1F1F1F;
+}
+
+h2, h3 {
+  color: #223358;
+  font-size: 32px;
+}
+
+.link-btn {
+  text-decoration: none;
+  font-size: 24px;
+  color: #FFBB5C;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  color: #1F1F1F;
+}
